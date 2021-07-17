@@ -17,20 +17,22 @@
 <body>
        <div class="container mt-5">
            <h1 class="text-center mt-5 text-light ">Contact Me </h1>
-            <div class="bg-light">
-                <form class="">
+            <div class="bg-light border border-3 border-info shadow-lg p-2">
+                <form action="#">
                     <!-- First Row with F & L Name-->
                     <div class="row">
                         <div class="col">
                             <div class="d-flex flex-column m-2">
-                                <Label>First Name:</Label>
-                                <input type="text" placeholder="First Name">
+                                <Label class="form-label">First Name:</Label>
+                                <input type="text" placeholder="First Name" class="form-control" 
+                                    name="FirstName" aria-label="First Name" required>
                             </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column m-2">
-                                <label>Last Name:</label>
-                                <input type="text" placeholder="Last Name">
+                                <label class="form-label">Last Name:</label>
+                                <input type="text" placeholder="Last Name" class="form-control" 
+                                    name="LastName" aria-label="Last Name" required>
                             </div>
                         </div>
                     </div>
@@ -39,14 +41,16 @@
                     <div class="row">
                         <div class="col">
                                 <div class="d-flex flex-column m-2">
-                                    <Label>Email:</Label>
-                                    <input type="text" placeholder="Email">
+                                    <Label class="form-label">Email:</Label>
+                                    <input type="email" placeholder="Email" class="form-control"
+                                        name="Email" aria-label="Email" required>
                                 </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column m-2">
-                                <Label>Phone Number(Optional):</Label>
-                                <input type="text" placeholder="Phone Number">
+                                <Label class="form-label">Phone Number(Optional):</Label>
+                                <input type="text" placeholder="Phone Number" class="form-control"
+                                    name="Phone Number" aria-label="Phone Number"> 
                             </div>
                         </div>
                     </div>
@@ -54,8 +58,9 @@
                     <div class="row">
                         <div class="col">
                             <div class="d-flex flex-column m-2">
-                                <Label>Subject:</Label>
-                                <input type="text" placeholder="Subject">
+                                <Label class="form-label">Subject:</Label>
+                                <input type="text" placeholder="Subject" class="form-control"
+                                    name="Subject" aria-label="Subject" required>
                             </div>
                         </div>
                     </div>
@@ -63,13 +68,15 @@
                     <div class="row">
                         <div class="col">
                             <div class="d-flex flex-column m-2">
-                                <Label>Message:</Label>
-                                <input type="text" placeholder="Message">
+                                <Label class="form-label">Message:</Label>
+                                <textarea type="text" placeholder="Message" class="form-control"
+                                    name="Message" aria-label="Message" required></textarea>
                             </div>
                         </div>
+                         
                     </div> 
                     <!-- submit button-->  
-                    <button class="btn btn-outline-dark bg-warning m-2" type="submit">Submit</button>               
+                    <button class="btn btn-outline-dark bg-warning m-2" type="submit">Submit</button>              
                 </form>
             </div>
        </div>
